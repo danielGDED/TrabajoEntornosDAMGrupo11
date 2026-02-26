@@ -1,16 +1,33 @@
-# Compiled class file
-*.class
+# --- Operating system ---
+.DS_Store
 
-# Log file
+# --- Eclipse ---
+.metadata/
+.project
+.classpath
+.settings/
+
+# --- Artefactos de compilación ---
+bin/
+target/
+build/
+
+# --- Archivos temporales y de logs ---
 *.log
+*.tmp
 
-# BlueJ files
-*.ctxt
+# --- Dependencias (si usas Maven/Gradle) ---
+# Para Maven
+# !/pom.xml
+# /target/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Para Gradle
+# !/build.gradle
+# !/settings.gradle
+# /build/
 
-# Package Files #
+# --- Archivos generados ---
+*.class
 *.jar
 *.war
 *.nar
@@ -18,7 +35,8 @@
 *.zip
 *.tar.gz
 *.rar
+*.log
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# --- virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml ---
 hs_err_pid*
 replay_pid*
