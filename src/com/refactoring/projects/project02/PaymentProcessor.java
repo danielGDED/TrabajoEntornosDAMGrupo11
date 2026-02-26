@@ -2,6 +2,7 @@ package com.refactoring.projects.project02;
 
 public class PaymentProcessor {
 
+	// AÑADIR ENUM
    public double calcularTotal(double precio, String tipoPago, boolean esCliente, int cantidad) {
         double total = precio * cantidad;
         if (tipoPago.equals("tarjeta")) {
