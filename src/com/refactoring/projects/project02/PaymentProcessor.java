@@ -12,14 +12,23 @@ public class PaymentProcessor {
         
         
         if (tipoPago.equals("tarjeta")) {
-            total = total * COMISION; // 5% comisión
+             total = aplicarComisionTarjeta(total); // 5% comisión
         }
         if (esCliente) {
-            total = total * DESCUENTO; // 10% descuento
+            total =  aplicarDescuento(total);// 10% descuento
         }
         if (cantidad > 10) {
-            total = total * DESCUENTO_POR_VOLUMEN; // 5% descuento por volumen
+            total = aplicarDescuentoPorVolumen(total); // 5% descuento por volumen
         }
         return total;
     }
+   public double aplicarComisionTarjeta(double precioAplicar) {
+	   return precioAplicar * COMISION;
+   }
+   public double aplicarDescuento(double precioAplicar) {
+	   return precioAplicar * DESCUENTO;
+   }
+   public double aplicarDescuentoPorVolumen(double precioAplicar) {
+	   return precioAplicar * DESCUENTO_POR_VOLUMEN;
+   }
 }
