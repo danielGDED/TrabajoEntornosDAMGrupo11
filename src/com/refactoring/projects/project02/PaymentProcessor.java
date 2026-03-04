@@ -7,7 +7,7 @@ public class PaymentProcessor {
     final double DESCUENTO_POR_VOLUMEN = 0.95;
     
 	// AÑADIR ENUM
-   public double calcularTotal(double precio, String tipoPago, boolean esCliente, int cantidad) {
+   public double calcularTotal(double precio, TipoPago tipoPago, boolean esCliente, int cantidad) {
         double total = precio * cantidad;
         
         
