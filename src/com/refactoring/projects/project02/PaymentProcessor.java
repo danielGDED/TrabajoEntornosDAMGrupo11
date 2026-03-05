@@ -3,7 +3,7 @@ package com.refactoring.projects.project02;
 public class PaymentProcessor extends ModificarPrecio {
 
     // AÑADIR ENUM
-   public double calcularTotal(double precio, String tipoPago, boolean esCliente, int cantidad) {
+   public double calcularTotal(double precio, TipoPago tipoPago, boolean esCliente, int cantidad) {
         double total = precio * cantidad;
         
         
